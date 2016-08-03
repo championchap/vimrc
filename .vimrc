@@ -48,3 +48,6 @@ nnoremap <C-\> :NERDTreeToggle<CR>
 
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Always use Unix file endings
+set ff=unix
