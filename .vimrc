@@ -10,7 +10,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Put Your Plugins Here
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'chriskempson/base16-vim'
 
 " All of your Plugins must be added before the following line
