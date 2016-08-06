@@ -28,10 +28,6 @@ set nowrap
 hi MatchParen cterm=none ctermbg=white ctermfg=white
 set autoindent
 
-highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
-set colorcolumn=80
-
-
 " Language specific indentation settings
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
