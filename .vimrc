@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Put Your Plugins Here
 Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
+Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -27,10 +28,6 @@ set colorcolumn=80
 set nowrap
 hi MatchParen cterm=none ctermbg=white ctermfg=white
 set autoindent
-
-highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
-set colorcolumn=80
-
 
 " Language specific indentation settings
 autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
@@ -55,3 +52,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Always use Unix file endings
 set ff=unix
+
+" Set the ; to be the new :, because holding shift sucks
+:nmap ; :
