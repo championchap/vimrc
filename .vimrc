@@ -12,7 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
 Plugin 'evidens/vim-twig'
-
+Plugin 'elixir-lang/vim-elixir'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,3 +53,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Always use Unix file endings
 set ff=unix
+
+" Set the ; to be the new :, because holding shift sucks
+:nmap ; :
