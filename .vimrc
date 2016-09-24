@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
 Plugin 'evidens/vim-twig'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'scrooloose/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,3 +57,14 @@ set ff=unix
 
 " Set the ; to be the new :, because holding shift sucks
 :nmap ; :
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_javascript_checkers = ['standard']
