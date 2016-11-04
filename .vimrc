@@ -9,19 +9,24 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Put Your Plugins Here
-Plugin 'scrooloose/nerdtree'
 Plugin 'chriskempson/base16-vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
+Plugin 'beyondwords/vim-twig'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
 " Standard .vimrc stuff here
 syntax enable
 set background=dark
-colorscheme base16-tomorrow
 set tabstop=4
 set number
 map <C-\> :NERDTreeToggle<CR>
