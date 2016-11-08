@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
 Plugin 'beyondwords/vim-twig'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -82,5 +83,6 @@ let g:syntastic_javascript_checkers = ['standard']
 " Disable Syntastic by default
 autocmd VimEnter * SyntasticToggleMode
 
-" Let powerline use the nice fonts
+" Powerline Stuff
 let g:airline_powerline_fonts = 1
+let g:airline_#extensions#branch#enables = 1
