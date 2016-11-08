@@ -14,6 +14,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'scrooloose/syntastic'
 Plugin 'beyondwords/vim-twig'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,3 +81,6 @@ let g:syntastic_javascript_checkers = ['standard']
 
 " Disable Syntastic by default
 autocmd VimEnter * SyntasticToggleMode
+
+" Let powerline use the nice fonts
+let g:airline_powerline_fonts = 1
