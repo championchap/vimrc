@@ -54,7 +54,7 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
 " NERDTree Toggle
-nnoremap <C-\> :NERDTreeToggle<CR>
+nnoremap <C-\> :NERDTreeToggle<CR><C-w>=
 
 " NERDTree Show Hidden files by Default
 let NERDTreeShowHidden=1
