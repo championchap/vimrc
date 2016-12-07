@@ -17,6 +17,10 @@ Plugin 'beyondwords/vim-twig'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,28 +34,31 @@ endif
 " Standard .vimrc stuff here
 syntax enable
 set background=dark
-set tabstop=4
+set expandtab
 set number
-map <C-\> :NERDTreeToggle<CR>
 set colorcolumn=80
 set nowrap
-hi MatchParen cterm=none ctermbg=white ctermfg=white
 set autoindent
+set shiftwidth=4
+set softtabstop=4
+hi MatchParen cterm=none ctermbg=white ctermfg=white
 
 " Language specific indentation settings
-autocmd Filetype ruby setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype sass setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype xml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype yaml setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype ruby setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype javascript setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype html setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype css setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype sass setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype xml setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype yaml setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
+
+nnoremap <C-=> <C-W>=
 
 " NERDTree Toggle
 nnoremap <C-\> :NERDTreeToggle<CR><C-w>=
