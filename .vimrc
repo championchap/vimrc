@@ -41,6 +41,8 @@ set nowrap
 set autoindent
 set shiftwidth=4
 set softtabstop=4
+set ignorecase
+set hlsearch
 hi MatchParen cterm=none ctermbg=white ctermfg=white
 
 " Language specific indentation settings
