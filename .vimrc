@@ -21,6 +21,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'digitaltoad/vim-pug'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -52,6 +53,7 @@ autocmd Filetype css setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype sass setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype xml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype yaml setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype pug setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
