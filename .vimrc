@@ -54,6 +54,7 @@ autocmd Filetype sass setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype xml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype yaml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype pug setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype erb setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
