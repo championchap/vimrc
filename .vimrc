@@ -57,6 +57,7 @@ autocmd Filetype yaml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype pug setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype eruby setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype haxe setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype html.handlebars setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
