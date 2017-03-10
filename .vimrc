@@ -23,6 +23,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'jdonaldson/vaxe'
+Plugin 'jwalton512/vim-blade'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,6 +59,7 @@ autocmd Filetype pug setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype eruby setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype haxe setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype html.handlebars setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype json setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
