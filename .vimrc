@@ -91,12 +91,17 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['standard']
 
 " Disable Syntastic by default
-autocmd VimEnter * SyntasticToggleMode
+" autocmd VimEnter * SyntasticToggleMode
+
+" Auto format JS files to Standard Style
+autocmd bufwritepost *.js silent !standard --fix %
+autocmd bufwritepost *.jsx silent !standard --fix %
+set autoread
 
 " Powerline Stuff
 let g:airline_powerline_fonts = 1
