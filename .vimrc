@@ -99,9 +99,9 @@ let g:syntastic_javascript_checkers = ['standard']
 " autocmd VimEnter * SyntasticToggleMode
 
 " Auto format JS files to Standard Style
-autocmd bufwritepost *.js silent !standard --fix %
-autocmd bufwritepost *.jsx silent !standard --fix %
-set autoread
+"autocmd bufwritepost *.js silent !standard --fix %
+"autocmd bufwritepost *.jsx silent !standard --fix %
+"set autoread
 
 " Powerline Stuff
 let g:airline_powerline_fonts = 1
