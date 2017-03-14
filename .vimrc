@@ -84,6 +84,9 @@ set ff=unix
 " Set the ; to be the new :, because holding shift sucks
 :nmap ; :
 
+" This makes sure we can use backspace to delete characters we haven't typed
+set backspace=2
+
 " Syntastic stuff
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
