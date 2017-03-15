@@ -99,7 +99,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['standard']
 
 " Disable Syntastic by default
-" autocmd VimEnter * SyntasticToggleMode
+autocmd VimEnter * SyntasticToggleMode
 
 " Auto format JS files to Standard Style
 "autocmd bufwritepost *.js silent !standard --fix %
