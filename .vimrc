@@ -12,7 +12,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'scrooloose/syntastic'
 Plugin 'beyondwords/vim-twig'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
@@ -24,6 +23,9 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'jdonaldson/vaxe'
 Plugin 'jwalton512/vim-blade'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,6 +62,7 @@ autocmd Filetype eruby setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype haxe setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype html.handlebars setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype json setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype apache setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
@@ -87,25 +90,10 @@ set ff=unix
 " This makes sure we can use backspace to delete characters we haven't typed
 set backspace=2
 
-" Syntastic stuff
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['standard']
-
-" Disable Syntastic by default
-autocmd VimEnter * SyntasticToggleMode
-
-" Auto format JS files to Standard Style
-"autocmd bufwritepost *.js silent !standard --fix %
-"autocmd bufwritepost *.jsx silent !standard --fix %
-"set autoread
-
 " Powerline Stuff
 let g:airline_powerline_fonts = 1
 let g:airline_#extensions#branch#enables = 1
+
+" Ale stuff
+autocmd bufwritepost *.js silent !standard --fix %
+set autoread
