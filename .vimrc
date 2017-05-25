@@ -26,6 +26,10 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'w0rp/ale'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'rust-lang/rust.vim'
+Plugin 'rhysd/vim-crystal'
+Plugin 'stanangeloff/php.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,6 +67,8 @@ autocmd Filetype haxe setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype html.handlebars setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype apache setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype rust setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype crystal setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
@@ -95,5 +101,5 @@ let g:airline_powerline_fonts = 1
 let g:airline_#extensions#branch#enables = 1
 
 " Ale stuff
-autocmd bufwritepost *.js silent !standard --fix %
+" autocmd bufwritepost *.js silent !standard --fix %
 set autoread
