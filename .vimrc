@@ -69,6 +69,7 @@ autocmd Filetype json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype apache setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype rust setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype crystal setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype blade setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
 nnoremap <C-H> <C-W><C-H>
