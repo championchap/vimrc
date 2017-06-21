@@ -30,6 +30,7 @@ Plugin 'lambdatoast/elm.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'rhysd/vim-crystal'
 Plugin 'stanangeloff/php.vim'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -84,6 +85,9 @@ nnoremap <C-\> :NERDTreeToggle<CR><C-w>=
 
 " NERDTree Show Hidden files by Default
 let NERDTreeShowHidden=1
+
+" Show/Hide the Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre * :%s/\s\+$//e
