@@ -106,4 +106,4 @@ let g:airline_#extensions#branch#enables = 1
 
 " Ale stuff
 " autocmd bufwritepost *.js silent !standard --fix %
-set autoread
+" set autoread
