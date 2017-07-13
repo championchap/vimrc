@@ -24,7 +24,6 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'jdonaldson/vaxe'
 Plugin 'jwalton512/vim-blade'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'editorconfig/editorconfig-vim'
 Plugin 'w0rp/ale'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'rust-lang/rust.vim'
@@ -52,6 +51,7 @@ set autoindent
 set shiftwidth=4
 set softtabstop=4
 set ignorecase
+set encoding=utf-8
 hi MatchParen cterm=none ctermbg=white ctermfg=white
 
 " Language specific indentation settings
