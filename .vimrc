@@ -24,12 +24,9 @@ Plugin 'digitaltoad/vim-pug'
 Plugin 'jdonaldson/vaxe'
 Plugin 'jwalton512/vim-blade'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'w0rp/ale'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'rhysd/vim-crystal'
-Plugin 'stanangeloff/php.vim'
 Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
