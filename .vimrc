@@ -28,6 +28,7 @@ Plugin 'lambdatoast/elm.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'rhysd/vim-crystal'
 Plugin 'majutsushi/tagbar'
+Plugin 'stephpy/vim-yaml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,6 +50,8 @@ set autoindent
 set shiftwidth=4
 set softtabstop=4
 set ignorecase
+set encoding=utf-8
+set incsearch
 hi MatchParen cterm=none ctermbg=white ctermfg=white
 
 " Language specific indentation settings
