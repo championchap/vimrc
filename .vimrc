@@ -13,7 +13,6 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'beyondwords/vim-twig'
-Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'pangloss/vim-javascript'
@@ -21,14 +20,8 @@ Plugin 'mxw/vim-jsx'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-pug'
-Plugin 'jdonaldson/vaxe'
 Plugin 'jwalton512/vim-blade'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'lambdatoast/elm.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'rhysd/vim-crystal'
 Plugin 'majutsushi/tagbar'
-Plugin 'stephpy/vim-yaml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -104,6 +97,10 @@ set backspace=2
 " Powerline Stuff
 let g:airline_powerline_fonts = 1
 let g:airline_#extensions#branch#enables = 1
+
+" NERDTree Stuff
+" Don't show us vim's temp files in NERDTree
+let NERDTreeIgnore=['\.swp$[[file]]', '\.swo$[[file]]']
 
 " Ale stuff
 " autocmd bufwritepost *.js silent !standard --fix %
