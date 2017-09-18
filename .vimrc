@@ -104,6 +104,11 @@ let g:airline_#extensions#branch#enables = 1
 " Don't show us vim's temp files in NERDTree
 let NERDTreeIgnore=['\.swp$[[file]]', '\.swo$[[file]]']
 
+set hlsearch
+
+" Removes Search Highlighting the next time you hit Return
+nnoremap <CR> :noh<CR><CR>
+
 " Ale stuff
 " autocmd bufwritepost *.js silent !standard --fix %
 " set autoread
