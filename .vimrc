@@ -109,6 +109,5 @@ set hlsearch
 " Removes Search Highlighting the next time you hit Return
 nnoremap <CR> :noh<CR><CR>
 
-" Ale stuff
-" autocmd bufwritepost *.js silent !standard --fix %
-" set autoread
+" Allow JSX in normal JS files
+let g:jsx_ext_required = 0
