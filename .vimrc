@@ -24,7 +24,10 @@ Plugin 'jwalton512/vim-blade'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'jdonaldson/vaxe'
-
+Plugin 'leafgarland/typescript-vim'
+Plugin 'ianks/vim-tsx'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tikhomirov/vim-glsl'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -65,6 +68,7 @@ autocmd Filetype html.handlebars setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype apache setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype rust setlocal expandtab shiftwidth=2 softtabstop=2
+autocmd Filetype typescript setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype crystal setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype blade setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype markdown setlocal expandtab shiftwidth=2 softtabstop=2
@@ -113,3 +117,17 @@ nnoremap <CR> :noh<CR><CR>
 
 " Allow JSX in normal JS files
 let g:jsx_ext_required = 0
+
+function ToggleTabSpaces()
+    if (&sts > 3)
+        setlocal ts=2 sts=2 sw=2
+        echom "2 Spaces For Tabs"
+    else
+        setlocal ts=4 sts=4 sw=4
+        echom "4 Spaces For Tabs"
+    endif
+endfunction
+
+nnoremap <F9> :call ToggleTabSpaces() <CR>
+inoremap <F9> <ESC> :call ToggleTabSpaces() <CR>i
+
