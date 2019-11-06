@@ -5,6 +5,9 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Setting FZF to be usable by Vim
+set rtp+=~/.fzf
+
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
@@ -19,6 +22,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-pug'
+Plugin 'junegunn/fzf'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,7 +68,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
+" Equalize Width of Splits
 nnoremap <C-=> <C-W>=
+
+" FZF Shortcut
+nnoremap <C-P> :FZF <CR>
 
 " NERDTree Toggle
 nnoremap <C-\> :NERDTreeToggle<CR><C-w>=
