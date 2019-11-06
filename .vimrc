@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Put Your Plugins Here
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'elixir-lang/vim-elixir'
 Plugin 'beyondwords/vim-twig'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -20,14 +19,6 @@ Plugin 'mxw/vim-jsx'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-pug'
-Plugin 'jwalton512/vim-blade'
-Plugin 'majutsushi/tagbar'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'jdonaldson/vaxe'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'ianks/vim-tsx'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tikhomirov/vim-glsl'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,15 +53,9 @@ autocmd Filetype sass setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype xml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype yaml setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype pug setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd Filetype eruby setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd Filetype haxe setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype html.handlebars setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype json setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype apache setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd Filetype rust setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd Filetype typescript setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd Filetype crystal setlocal expandtab shiftwidth=2 softtabstop=2
-autocmd Filetype blade setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd Filetype markdown setlocal expandtab shiftwidth=2 softtabstop=2
 
 " Faster Split Navigation Shortcuts
@@ -86,9 +71,6 @@ nnoremap <C-\> :NERDTreeToggle<CR><C-w>=
 
 " NERDTree Show Hidden files by Default
 let NERDTreeShowHidden=1
-
-" Show/Hide the Tagbar
-nmap <F8> :TagbarToggle<CR>
 
 " Remove Trailing Whitespace on Save
 autocmd BufWritePre * :%s/\s\+$//e
