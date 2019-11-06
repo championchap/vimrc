@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Setting FZF to be usable by Vim
+" Note: You need to install fzf on your system for this to work
 set rtp+=~/.fzf
 
 " let Vundle manage Vundle, required
