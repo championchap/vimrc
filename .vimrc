@@ -38,7 +38,7 @@ endif
 syntax enable
 set background=dark
 set expandtab
-set number
+set relativenumber
 set colorcolumn=80
 set nowrap
 set autoindent
