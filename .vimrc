@@ -25,6 +25,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'junegunn/fzf'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'neoclide/coc.nvim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
